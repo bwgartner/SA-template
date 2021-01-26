@@ -15,12 +15,12 @@ An example template of files for variants of a solution architecture in a docume
 
 # Validation
 - Obtain this document's template content
-  - git clone <ThisGitHubRepoURL> (to make a local copy)
+  - git clone "ThisGitHubRepoURL" (to make a local copy)
   - download either master (zip) or the latest release (zip/tar.gz), then unpack it
   - cd to your local directory where it landed and was uncompressed
 - Test that you have all the tooling in place to generate an output
   - e.g. daps --force -d DC-SA html
-  - test with a web browser, open the file:///<localDirectory>/build/SA/html/SA_draft/index.html
+  - test with a web browser, open the file:///localDirectoryName/build/SA/html/SA_draft/index.html
 
 # Usage / Process
 - At this point, you can now start editing the configuration/structure/content to meet your needs

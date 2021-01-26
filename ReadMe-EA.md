@@ -36,9 +36,9 @@
       - 5/v Technology
       - 6/vi Physical
       - 7/vii Migration
-      - in each of these chapters' directories, you will notice the main SA.doc references, via ifdef, and will utilize the alternative file content from SA-EA-<layer>.adoc.
+      - in each of these chapters' directories, you will notice the main SA.doc references, via ifdef, and will utilize the alternative file content from SA-EA-layerName.adoc.
         - so you don't need to edit/touch the chapter's SA.adoc
-        - if the respective ADOC_ATTRIBUTES is enabled in [DC-SA](./DC-SA) , thes SA-EA-<layer>.adoc is the file to edit and make changes to.
+        - if the respective ADOC_ATTRIBUTES is enabled in [DC-SA](./DC-SA) , the SA-EA-layerName.adoc is the file to edit and make changes to.
           - the relative sections/sub-sections, often based upon FCTR (Factors), FLVR (flavors), DT (Deployment Types) which are also based upon corresponding ADOC_ATTRIBUTES will be included as well.
     - review/edit the chapter/section/sub-section content, that you wish to include
   - as you edit the modular text content snippets, create an output format
