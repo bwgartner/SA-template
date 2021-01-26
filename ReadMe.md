@@ -1,11 +1,11 @@
 
 # Purpose
-An example template of files for a comprehensive solution architecture in a documentation-as-code approach.
+An example template of files for a comprehensive solution architecture or how-to guide in a documentation-as-code approach.
 
 # Assumption(s)
 - Most of the text-based content is in AsciiDoc ( https://github.com/asciidoc/asciidoc ) format
 - To create any number of multiple output formats, install and leverage DAPS ( https://github.com/openSUSE/daps )
-- The organization is similar to Archimate Enterprise Architecture ( https://pubs.opengroup.org/architecture/archimate3-doc )
+- An approach for the content organization is similar to Archimate Enterprise Architecture ( https://pubs.opengroup.org/architecture/archimate3-doc ), but simple variable changes can render as a structured book/chapter/section
 
 # Usage / Process
 - either git clone/fork or download a ZIP (and then unzip) of this GitHub repository

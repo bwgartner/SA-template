@@ -1,9 +1,11 @@
+# toggle draft off when completed
 DRAFT=yes
 
-## -----------------------------
+## -------------------------------
 ## Doc Config File for SUSE DAPS
 ## Solution Architecture
-## -----------------------------
+## Solution Architecture How-To
+## -------------------------------
 
 ## Basics
 
@@ -15,41 +17,49 @@ ADOC_TYPE="book"
 ADOC_POST="yes"
 
 ##
-# Variable Parameters
-#	Layers based upon Archmate
+# Modular/Variable Content Parameters
 ##
 
 ## Global
 ADOC_ATTRIBUTES=" --attribute env-daps=1"
 
-## Strategy (Categories)
+# For remaining attributes, if you want to skip, just comment out the respective ADOC_ATTRIBUTES line
+
+## template focus
+# either group by EA
+
+# EA = Enterprise Architecture, i.e. Archimate, layer based
+#ADOC_ATTRIBUTES+=" --attribute EA=1"
+
+## Strategy (EA)
 ADOC_ATTRIBUTES+=" --attribute Strategy=1"
 
-## Business
+## Business (EA)
 ADOC_ATTRIBUTES+=" --attribute Business=1"
 
-## Application (Workloads)
+## Application (Workloads) (EA)
 ADOC_ATTRIBUTES+=" --attribute Application=1"
-#	then add respective ISV attributes/parameters
+#	then add respective ISV attributes/parameters, like
+#	ADOC_ATTRIBUTES+=" --attribute ISVPartner=1"
 
-## Technology
+## Technology (EA)
 ADOC_ATTRIBUTES+=" --attribute Technology=1"
-#	then add respective SUSE product portolio attributes/parameters
+#	then add respective SUSE portolio attributes/parameters, like
+#	ADOC_ATTRIBUTES+=" --attribute SUSEManager=1"
 
-## Physical
+## Physical (EA)
 ADOC_ATTRIBUTES+=" --attribute Physical=1"
-#	then add respective IHV/CSP attributes/parameters
+#	then add respective IHV/CSP attributes/parameters, like
+#	ADOC_ATTRIBUTES+=" --attribute IHVHPE=1"
+#	ADOC_ATTRIBUTES+=" --attribute CSPAWS=1"
 
-## Migration
+## Migration (EA)
 ADOC_ATTRIBUTES+=" --attribute Migration=1"
 
-## Glossary
-ADOC_ATTRIBUTES+=" --attribute Glossary=1"
-
-## Appendix
-ADOC_ATTRIBUTES+=" --attribute Appendix=1"
-
-## Factors
+## Factors (FCTR)
+## core priority deployment factors
+ADOC_ATTRIBUTES+=" --attribute FCTR=1"
+# 	then add respective factors, named specifically
 # Availability
 ADOC_ATTRIBUTES+=" --attribute Availability=1"
 # Performance
@@ -59,7 +69,10 @@ ADOC_ATTRIBUTES+=" --attribute Security=1"
 # Integrity
 ADOC_ATTRIBUTES+=" --attribute Integrity=1"
 
-## Flavors
+## Flavors (FLVR)
+## extent/phases of deployment flavors
+ADOC_ATTRIBUTES+=" --attribute FLVR=1"
+# 	then add respective flavors, named specifically, like
 # Proof-of-Concept
 ADOC_ATTRIBUTES+=" --attribute PoC=1"
 # Production
@@ -67,8 +80,32 @@ ADOC_ATTRIBUTES+=" --attribute Production=1"
 # Scaling
 ADOC_ATTRIBUTES+=" --attribute Scaling=1"
 
-## Deployment Types
-# 	then add respective deployment types, named more specifically
+## Deployment Types (DT)
+# variant approaches to deployment
+ADOC_ATTRIBUTES+=" --attribute DT=1"
+# 	then add respective deployment types, named specifically, like
 ADOC_ATTRIBUTES+=" --attribute DT1=1"
 ADOC_ATTRIBUTES+=" --attribute DT2=1"
+
+# or just fall back to numerical Chapter/Section/...
+##
+
+## References
+ADOC_ATTRIBUTES+=" --attribute References=1"
+
+## Glossary
+ADOC_ATTRIBUTES+=" --attribute Glossary=1"
+
+## Colophon
+#ADOC_ATTRIBUTES+=" --attribute Colophon=1"
+
+## Appendix
+ADOC_ATTRIBUTES+=" --attribute Appendix=1"
+
+## Legal Notice
+ADOC_ATTRIBUTES+=" --attribute LN=1"
+
+## License (Gnu Free Document License)
+ADOC_ATTRIBUTES+=" --attribute GFDL=1"
+
 

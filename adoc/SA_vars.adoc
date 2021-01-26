@@ -1,6 +1,14 @@
 :useCase: FixMe
 
-:title: Digital Transformation - FixMe
+:companyName: SUSE
+
+ifdef::EA[]
+:title: Solution Architecture - {useCase}
+endif::EA[]
+
+ifndef::EA[]
+:title: Digital Transformation - {useCase}
+endif::EA[]
 
 ////
 :author: TBD
@@ -13,5 +21,5 @@
 
 ifdef::env-github[]
 :imagesdir: {authorGHURL}/blob/master/SA-{useCase}/media/
-endif::[]
+endif::env-github[]
 
