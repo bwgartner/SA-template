@@ -17,19 +17,43 @@ ADOC_TYPE="book"
 ADOC_POST="yes"
 
 ##
-# Modular/Variable Content Parameters
+# Global Attributes
 ##
-
-## Global
 ADOC_ATTRIBUTES=" --attribute env-daps=1"
 
-# For remaining attributes, if you want to skip, just comment out the respective ADOC_ATTRIBUTES line
+## References
+ADOC_ATTRIBUTES+=" --attribute References=1"
 
-## template focus
-# either group by EA
+## Glossary
+ADOC_ATTRIBUTES+=" --attribute Glossary=1"
+
+## Colophon (TBD)
+#ADOC_ATTRIBUTES+=" --attribute Colophon=1"
+
+## Appendix
+ADOC_ATTRIBUTES+=" --attribute Appendix=1"
+
+## Legal Notice
+ADOC_ATTRIBUTES+=" --attribute LN=1"
+
+## License (Gnu Free Document License)
+ADOC_ATTRIBUTES+=" --attribute GFDL=1"
+
+##
+# Modular/Variable Content Parameters for Template Focus
+#	(to override default chapter/section/sub-section default structure)
+#	if you add other such attributes, ensure you specify (for appending)
+# ADOC_ATTRIBUTES+=" --attribute <Name>=1"
+##
+
+## ------------------------------------- (EA)
+#	Enterprise Architecture Grouping
 
 # EA = Enterprise Architecture, i.e. Archimate, layer based
+#	uncomment the following to switch to this format/structure
 #ADOC_ATTRIBUTES+=" --attribute EA=1"
+
+# these layers are only referenced in combination with EA setting
 
 ## Strategy (EA)
 ADOC_ATTRIBUTES+=" --attribute Strategy=1"
@@ -56,56 +80,45 @@ ADOC_ATTRIBUTES+=" --attribute Physical=1"
 ## Migration (EA)
 ADOC_ATTRIBUTES+=" --attribute Migration=1"
 
-## Factors (FCTR)
-## core priority deployment factors
-ADOC_ATTRIBUTES+=" --attribute FCTR=1"
+## ------------------------------------- (EA)
+
+## --------------------------------------------------------- (FCTR)
+## Factors (FCTR) - core priority deployment factors sub-set
+#	uncomment the following to switch/enable to this format/structure
+#ADOC_ATTRIBUTES+=" --attribute FCTR=1"
+
 # 	then add respective factors, named specifically
-# Availability
+# Availability (FCTR>
 ADOC_ATTRIBUTES+=" --attribute Availability=1"
-# Performance
+# Performance (FCTR>
 ADOC_ATTRIBUTES+=" --attribute Performance=1"
-# Security
+# Security (FCTR>
 ADOC_ATTRIBUTES+=" --attribute Security=1"
-# Integrity
+# Integrity (FCTR>
 ADOC_ATTRIBUTES+=" --attribute Integrity=1"
+## --------------------------------------------------------- (FCTR)
 
-## Flavors (FLVR)
-## extent/phases of deployment flavors
-ADOC_ATTRIBUTES+=" --attribute FLVR=1"
+## ------------------------------------------------------------ (FLVR)
+## Flavors (FLVR) - extent/phases of deployment flavors sub-set
+#	uncomment the following to switch/enable to this format/structure
+#ADOC_ATTRIBUTES+=" --attribute FLVR=1"
 # 	then add respective flavors, named specifically, like
-# Proof-of-Concept
+
+# Proof-of-Concept (FLVR)
 ADOC_ATTRIBUTES+=" --attribute PoC=1"
-# Production
+# Production (FLVR)
 ADOC_ATTRIBUTES+=" --attribute Production=1"
-# Scaling
+# Scaling (FLVR)
 ADOC_ATTRIBUTES+=" --attribute Scaling=1"
+## ------------------------------------------------------------ (FLVR)
 
-## Deployment Types (DT)
-# variant approaches to deployment
-ADOC_ATTRIBUTES+=" --attribute DT=1"
-# 	then add respective deployment types, named specifically, like
-ADOC_ATTRIBUTES+=" --attribute DT1=1"
+## ------------------------------------------------------------ (DT)
+## Deployment Types (DT) - variant approaches to deployment
+#	uncomment the following to switch/enable to this format/structure
+#ADOC_ATTRIBUTES+=" --attribute DT=1"
+
+# 	then add respective deployment types, specifically named
+ADOC_ATTRIBUTES+=" --attribute DT1=1" 
 ADOC_ATTRIBUTES+=" --attribute DT2=1"
-
-# or just fall back to numerical Chapter/Section/...
-##
-
-## References
-ADOC_ATTRIBUTES+=" --attribute References=1"
-
-## Glossary
-ADOC_ATTRIBUTES+=" --attribute Glossary=1"
-
-## Colophon
-#ADOC_ATTRIBUTES+=" --attribute Colophon=1"
-
-## Appendix
-ADOC_ATTRIBUTES+=" --attribute Appendix=1"
-
-## Legal Notice
-ADOC_ATTRIBUTES+=" --attribute LN=1"
-
-## License (Gnu Free Document License)
-ADOC_ATTRIBUTES+=" --attribute GFDL=1"
-
+## ------------------------------------------------------------ (DT)
 

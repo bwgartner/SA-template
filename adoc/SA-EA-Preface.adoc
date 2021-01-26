@@ -30,7 +30,6 @@ ifndef::EA[]
 * FixMe - section outline
 endif::EA[]
 
-
 Additional characteristics,like
 ifdef::FCTR[]
 decision factors such as:

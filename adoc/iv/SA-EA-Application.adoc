@@ -9,6 +9,8 @@ FixMe - Varius sit amet mattis vulputate. Nisi scelerisque eu ultrices vitae auc
 
 image::SA-Application.png[title="Solution Architecture - {useCase} Application", scaledwidth=80%]
 
+ifdef::FCTR[]
+
 ifdef::Availability[]
 include::./Availability/SA.adoc[]
 endif::Availability[]
@@ -24,4 +26,6 @@ endif::Security[]
 ifdef::Integrity[]
 include::./Integrity/SA.adoc[]
 endif::Integrity[]
+
+endif::FCTR[]
 
