@@ -21,6 +21,7 @@ An example template of files for variants of a solution architecture in a docume
 - Test that you have all the tooling in place to generate an output
   - e.g. daps --force -d DC-SA html
   - test with a web browser, open the file:///localDirectoryName/build/SA/html/SA_draft/index.html
+- Review [examples](./examples) to create and view some sample outputs
 
 # Usage / Process
 - At this point, you can now start editing the configuration/structure/content to meet your needs
