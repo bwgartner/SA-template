@@ -3,15 +3,15 @@
 An example template of files for variants of a solution architecture in a documentation-as-code approach.
 
 # Assumption(s)
-- The text-based structure/format is in AsciiDoc ( https://github.com/asciidoc/asciidoc ) format (see/edit \*.adoc files)
+- The text-based structure/format is in AsciiDoc ( https://github.com/asciidoc/asciidoc ) format (see/edit \*.adoc files) and can review a simple tutorial ( https://github.com/bwgartner/suse-doc/tree/master/AsciiDoc)
   - the default structure is generic ... classic book - chapter - section - sub-section
-    - other variations are also available, see [ReadMe-EA.md](./ReadMe-EA.md)
+    - other variations are also available, see
+      Enterprise Architecture - [ReadMe-EA.md](./ReadMe-EA.md)
+      Reference Architecture - [ReadMe-RA.md](./ReadMe-RA.md)
   - much of the sample text placeholder content is from the ( https://loremipsum.io/ ) generator ... so this is where you substitute your content.
     - Focus on anything that cites "FixMe"
 - To create any number of multiple output formats, install and leverage DAPS ( https://github.com/openSUSE/daps )
   - html, single-html, pdf, epub
-
-- An approach for the content organization is similar to Archimate Enterprise Architecture ( https://pubs.opengroup.org/architecture/archimate3-doc ), but simple variable changes can render as a structured book/chapter/section
 
 # Validation
 - Obtain this document's template content
@@ -29,7 +29,7 @@ An example template of files for variants of a solution architecture in a docume
     - for the default configuration/structure (chapter/section/sub-section)
       - review/edit the DAPS configuration file [DC-SA](./DC-SA)
         - comment out any ADOC_ATTRIBUTES line to skip that respective section
-        - uncomment out any ADOC_ATTRIBUTES lines and set the value to 1 to include the respective content
+        - uncomment any ADOC_ATTRIBUTES lines and set the value to 1 to include the respective content
   - in the main "adoc" directory
     - review/edit the [adoc/SA.adoc](./adoc/SA.adoc) main file that pulls in the selected sections
       - if the respective ADOC_ATTRIBUTES value is set (value = 1 and uncommented) in the [DC-SA](./DC-SA) file, then the conditional "ifdef" will include that content in the output

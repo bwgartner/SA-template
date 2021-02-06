@@ -3,12 +3,16 @@
 :companyName: SUSE
 
 ifdef::EA[]
-:title: Solution Architecture - {useCase}
+:title: FixMe - Solution Architecture - {useCase}
 endif::EA[]
 
-ifndef::EA[]
+ifdef::RA[]
+:title: FixMe - Reference Architecture - {useCase}
+endif::RA[]
+
+ifndef::EA,RA[]
 :title: FixMe - Digital Transformation - {useCase}
-endif::EA[]
+endif::EA,RA[]
 
 ////
 :author: TBD

@@ -47,6 +47,8 @@ ifdef::Appendix[]
 include::./SA-Appendix.adoc[]
 endif::Appendix[]
 
+// legal and license are optional, yet recommended
+
 // Standard SUSE includes
 ifdef::LN[]
 == Legal Notice
@@ -58,7 +60,7 @@ include::./{companyName}/common_sbp_legal_notice.adoc[]
 endif::LN[]
 
 ifdef::GFDL[]
-// Standard SUSE Best Practices includes
+// Standard SUSE includes
 // :leveloffset: 1
 include::./{companyName}/common_gfdl1.2_i.adoc[]
 endif::GFDL[]

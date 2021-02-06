@@ -33,10 +33,10 @@ ADOC_ATTRIBUTES+=" --attribute Glossary=1"
 ## Appendix
 ADOC_ATTRIBUTES+=" --attribute Appendix=1"
 
-## Legal Notice
+## Legal Notice (suggested)
 ADOC_ATTRIBUTES+=" --attribute LN=1"
 
-## License (Gnu Free Document License)
+## License (Gnu Free Document License) (suggested)
 ADOC_ATTRIBUTES+=" --attribute GFDL=1"
 
 ##
@@ -45,6 +45,54 @@ ADOC_ATTRIBUTES+=" --attribute GFDL=1"
 #	if you add other such attributes, ensure you specify (for appending)
 # ADOC_ATTRIBUTES+=" --attribute <Name>=1"
 ##
+
+###############################################################################
+###############################################################################
+
+## --------------------------- (RA)
+#	Reference Architecture
+#
+# RA = Reference Architecture
+#	uncomment the following to switch to this format/structure
+#ADOC_ATTRIBUTES+=" --attribute RA=1"
+#
+# these layers are only referenced in combination with EA setting
+#
+## ii-Business problem and business value (RA+BPBV)
+ADOC_ATTRIBUTES+=" --attribute BPBV=1"
+
+## iii-Requirements (RA+Requirements)
+ADOC_ATTRIBUTES+=" --attribute Requirements=1"
+
+## iv-Architectural overview (RA+ArchOv)
+ADOC_ATTRIBUTES+=" --attribute ArchOv=1"
+#	then add/enable respective attributes/parameters, like
+#	Network Architecture
+ADOC_ATTRIBUTES+=" --attribute ArchOvNetworkArch=1"
+
+## v-Component model (RA+CompMod)
+ADOC_ATTRIBUTES+=" --attribute CompMod=1"
+#	then add/enable respective attributes/parameters, like
+#	Software component description
+ADOC_ATTRIBUTES+=" --attribute SWComp=1"
+#	Hardware component description
+ADOC_ATTRIBUTES+=" --attribute HWComp=1"
+
+## vi-Deployment (RA+Deployment)
+ADOC_ATTRIBUTES+=" --attribute Deployment=1"
+#	then add/enable respective attributes/parameters, like
+#	Hardware deployment configuration
+ADOC_ATTRIBUTES+=" --attribute HWDepCfg=1"
+#	Software deployment configuration
+ADOC_ATTRIBUTES+=" --attribute SWDepCfg=1"
+
+## vii-Deployment considerations (RA+DepConsiderations)
+ADOC_ATTRIBUTES+=" --attribute DepConsiderations=1"
+
+## ------------------------------------- (RA)
+
+###############################################################################
+###############################################################################
 
 ## ------------------------------------- (EA)
 #	Enterprise Architecture Grouping
@@ -55,32 +103,30 @@ ADOC_ATTRIBUTES+=" --attribute GFDL=1"
 
 # these layers are only referenced in combination with EA setting
 
-## Strategy (EA)
+## ii-Strategy (EA+Strategy)
 ADOC_ATTRIBUTES+=" --attribute Strategy=1"
 
-## Business (EA)
+## iii-Business (EA+Business)
 ADOC_ATTRIBUTES+=" --attribute Business=1"
 
-## Application (Workloads) (EA)
+## iv-Application (Workloads) (EA+Applications)
 ADOC_ATTRIBUTES+=" --attribute Application=1"
 #	then add respective ISV attributes/parameters, like
 #	ADOC_ATTRIBUTES+=" --attribute ISVPartner=1"
 
-## Technology (EA)
+## v-Technology (EA+Technology)
 ADOC_ATTRIBUTES+=" --attribute Technology=1"
 #	then add respective SUSE portolio attributes/parameters, like
 #	ADOC_ATTRIBUTES+=" --attribute SUSEManager=1"
 
-## Physical (EA)
+## vi-Physical (EA+Physical)
 ADOC_ATTRIBUTES+=" --attribute Physical=1"
 #	then add respective IHV/CSP attributes/parameters, like
 #	ADOC_ATTRIBUTES+=" --attribute IHVHPE=1"
 #	ADOC_ATTRIBUTES+=" --attribute CSPAWS=1"
 
-## Migration (EA)
+## vii-Migration (EA+Migration)
 ADOC_ATTRIBUTES+=" --attribute Migration=1"
-
-## ------------------------------------- (EA)
 
 ## --------------------------------------------------------- (FCTR)
 ## Factors (FCTR) - core priority deployment factors sub-set
@@ -122,3 +168,7 @@ ADOC_ATTRIBUTES+=" --attribute DT1=1"
 ADOC_ATTRIBUTES+=" --attribute DT2=1"
 ## ------------------------------------------------------------ (DT)
 
+## ------------------------------------- (EA)
+
+###############################################################################
+###############################################################################

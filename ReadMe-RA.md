@@ -3,14 +3,14 @@
 - Assumptions
 - Validation
 
-# Enterprise Architecture variant
-- At this point, you can now start editing the configuration/structure/content to switch to the Archimate-based enterprise architecture approach ( https://pubs.opengroup.org/architecture/archimate3-doc )
-
+# Reference Architecture variant
+- At this point, you can now start editing the configuration/structure/content to to the reference enterprise architecture approach
   - NOTE: every portion of text that cites "FixMe" is a flag to encourage modification
   - in the top-level directory
     - for the default configuration/structure (chapter/section/sub-section)
       - review/edit the DAPS configuration file [DC-SA](./DC-SA)
-        - uncomment the global ADOC_ATTRIBUTES+=" --attribute EA=1" line to toggle to this variant
+        - uncomment the global ADOC_ATTRIBUTES+=" --attribute RA=1" line to toggle to this variant
+          - then re-do the above validation step to generate the target output
         - as needed/desired, also review/edit the same section's set of ADOC_ATTRIBUTES to match what content you with to provide
   - in the main "adoc" directory
     - review/edit the [adoc/SA.adoc](./adoc/SA.adoc) main file that pulls in the selected sections
@@ -29,18 +29,17 @@
       - [adoc/SA-References.adoc](./adoc/SA-References.adoc)
       - [adoc/SA-Appendix.adoc](./adoc/SA-Appendix.adoc)
       - [adoc/i/SA.adoc](./adoc/i/SA.adoc) aka Introduction
-    - the corresponding layers of an enterprise architecture, which correspond to Archimate layers, are noted below
+    - the corresponding layers of an enterprise architecture, which correspond to the suggested chapters, as noted below
       - [adoc/i/SA.adoc](./adoc/i/SA.adoc) aka Introduction
-      - 2/ii Strategy
-      - 3/iii Business
-      - 4/iv Application
-      - 5/v Technology
-      - 6/vi Physical
-      - 7/vii Migration
-      - in each of these chapters' directories, you will notice the main SA.doc references, via ifdef, and will utilize the alternative file content from SA-EA-layerName.adoc.
+      - 2/ii Business problem and business value (BPBV)
+      - 3/iii Requirements 
+      - 4/iv Architectural overview (ArchOv)
+      - 5/v Component model (CompMod)
+      - 6/vi Deployment (Deployment)
+      - 7/vii Deployment considerations (DepConsiderations)
+      - in each of these chapters' directories, you will notice the main SA.doc references, via ifdef, and will utilize the alternative file content from SA-RA-layerName.adoc.
         - so you don't need to edit/touch the chapter's SA.adoc
-        - if the respective ADOC_ATTRIBUTES is enabled in [DC-SA](./DC-SA) , the SA-EA-layerName.adoc is the file to edit and make changes to.
-          - the relative sections/sub-sections, often based upon FCTR (Factors), FLVR (flavors), DT (Deployment Types) which are also based upon corresponding ADOC_ATTRIBUTES will be included as well.
+        - the relative sections/sub-sections, [DC-SA](./DC-SA) which are also based upon corresponding ADOC_ATTRIBUTES in [DC-SA](./DC-SA) will be included as well.
     - review/edit the chapter/section/sub-section content, that you wish to include
   - as you edit the modular text content snippets, create an output format
     - daps --force -d DC-SA format
