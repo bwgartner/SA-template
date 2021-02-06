@@ -28,6 +28,7 @@ An example template of files for variants of a solution architecture in a docume
   - in the top-level directory
     - for the default configuration/structure (chapter/section/sub-section)
       - review/edit the DAPS configuration file [DC-SA](./DC-SA)
+        - NOTE: if you prefer to have a more specific output file name, copy [DC-SA](./DC-SA) to DC-YourPreferredOutput (and use that name change for any of the following "DC" references)
         - comment out any ADOC_ATTRIBUTES line to skip that respective section
         - uncomment any ADOC_ATTRIBUTES lines and set the value to 1 to include the respective content
   - in the main "adoc" directory
