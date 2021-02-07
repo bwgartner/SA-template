@@ -6,10 +6,11 @@ An example template of files for variants of a solution architecture in a docume
 - The text-based structure/format is in AsciiDoc ( https://github.com/asciidoc/asciidoc ) format (see/edit \*.adoc files) and can review a simple tutorial ( https://github.com/bwgartner/AsciiDoc-to-DAPS)
   - the default structure is generic ... classic book - chapter - section - sub-section
     - other variations are also available, see
-      Enterprise Architecture - [ReadMe-EA.md](./ReadMe-EA.md)
-      Reference Architecture - [ReadMe-RA.md](./ReadMe-RA.md)
-  - much of the sample text placeholder content is from the ( https://loremipsum.io/ ) generator ... so this is where you substitute your content.
-    - Focus on anything that cites "FixMe"
+      - Enterprise Architecture - [ReadMe-EA.md](./ReadMe-EA.md)
+      - Reference Architecture - [ReadMe-RA.md](./ReadMe-RA.md)
+  - much of the sample text placeholder content is from the generic [Loremipsum]( https://loremipsum.io/ ) generator ... so this is where you substitute your content.
+    - many templates also have built-in comments to help express what aspects to cover
+    - NOTE: focus on anything that cites "FixMe"
 - To create any number of multiple output formats, install and leverage DAPS ( https://github.com/openSUSE/daps )
   - html, single-html, pdf, epub
 
@@ -55,7 +56,7 @@ An example template of files for variants of a solution architecture in a docume
       - etc
   - as you edit the modular text content snippets, create an output format
     - daps --force -d DC-SA format
-      - where format might be "pdf", "html", "html --single", "epub" and others are also available
+      - where format might be "pdf", "html", "html --single", "epub", ...
       - then review the output and continually iterate until you have your content complete
   - miscellaneous 
     - you can also add images/media content as needed in those subdirectories
