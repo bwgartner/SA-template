@@ -1,8 +1,8 @@
 
-# [Purpose](./media/src/mp4/purpose.mp4)
+# Purpose ... [video](./media/src/mp4/purpose.mp4)
 An example template of files for variants of a solution architecture in a documentation-as-code approach. [video](./media/src/mp4/purpose.mp4)
 
-# [Assumption(s)](./media/src/mp4/assumptions.mp4)
+# Assumption(s) ... [video](./media/src/mp4/assumptions.mp4)
 - The text-based structure/format is in AsciiDoc ( https://github.com/asciidoc/asciidoc ) format (see/edit \*.adoc files) and can review a simple tutorial ( https://github.com/bwgartner/AsciiDoc-to-DAPS)
   - the default structure is generic ... classic book - chapter - section - sub-section
     - other variations are also available, see
@@ -14,7 +14,7 @@ An example template of files for variants of a solution architecture in a docume
 - To create any number of multiple output formats, install and leverage DAPS ( https://github.com/openSUSE/daps )
   - html, single-html, pdf, epub
 
-# [Validation](./media/src/mp4/validation.mp4)
+# Validation ... [video](./media/src/mp4/validation.mp4)
 - Obtain this document's template content
   - git clone "ThisGitHubRepoURL" (to make a local copy)
   - download either master (zip) or the latest release (zip/tar.gz), then unpack it
@@ -29,15 +29,15 @@ An example template of files for variants of a solution architecture in a docume
   - NOTE: every portion of text that cites "FixMe" is a flag to encourage modification
   - in the top-level directory
     - for the default configuration/structure (chapter/section/sub-section)
-      - review/edit the DAPS configuration file [DC-SA](./DC-SA) [video](./media/src/mp4/DC-SA.mp4)
+      - review/edit the DAPS configuration file [DC-SA](./DC-SA) ... [video](./media/src/mp4/DC-SA.mp4)
         - NOTE: if you prefer to have a more specific output file name, copy [DC-SA](./DC-SA) to DC-YourPreferredOutput (and use that name change for any of the following "DC" references)
         - comment out any ADOC_ATTRIBUTES line to skip that respective section
         - uncomment any ADOC_ATTRIBUTES lines and set the value to 1 to include the respective content
   - in the main "adoc" directory
-    - review/edit the [adoc/SA.adoc](./adoc/SA.adoc) main file that pulls in the selected sections [video](./media/src/mp4/SA.mp4)
+    - review/edit the [adoc/SA.adoc](./adoc/SA.adoc) main file that pulls in the selected sections ... [video](./media/src/mp4/SA.mp4)
       - if the respective ADOC_ATTRIBUTES value is set (value = 1 and uncommented) in the [DC-SA](./DC-SA) file, then the conditional "ifdef" will include that content in the output
       - if you need fewer chapters, feel free to comment out the extra "include" of chapters 2 (ii) - 7 (vii)
-    - review/edit the [adoc/SA_vars.adoc](./adoc/SA_vars.adoc) file to change global variable settings, like [video](./media/src/mp4/SA_vars.mp4)
+    - review/edit the [adoc/SA_vars.adoc](./adoc/SA_vars.adoc) file to change global variable settings ... [video](./media/src/mp4/SA_vars.mp4)
       - useCase
       - companyName
       - title (relative to your attribute setting)
@@ -55,7 +55,7 @@ An example template of files for variants of a solution architecture in a docume
       - [adoc/ii/SA.adoc](./adoc/ii/SA.adoc) [video](./media/src/mp4/snippets.mp4)
       - etc
   - as you edit the modular text content snippets, create an output format
-    - daps --force -d DC-SA format [video](./media/src/mp4/format.mp4)
+    - daps --force -d DC-SA "format" ... [video](./media/src/mp4/format.mp4)
       - where format might be "pdf", "html", "html --single", "epub", ...
       - then review the output and continually iterate until you have your content complete
   - miscellaneous 
