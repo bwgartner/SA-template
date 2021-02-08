@@ -1,20 +1,22 @@
 
-# Purpose ... [video](./media/src/mp4/purpose.mp4)
-An example template of files for variants of a solution architecture in a documentation-as-code approach. [video](./media/src/mp4/purpose.mp4)
+# Purpose
+An example template of files for variants of a solution architecture in a documentation-as-code approach ... [video](./media/src/mp4/purpose.mp4)
 
-# Assumption(s) ... [video](./media/src/mp4/assumptions.mp4)
+# Assumption(s)
+The provided content leverages several technologies ... [video](./media/src/mp4/assumptions.mp4)
 - The text-based structure/format is in AsciiDoc ( https://github.com/asciidoc/asciidoc ) format (see/edit \*.adoc files) and can review a simple tutorial ( https://github.com/bwgartner/AsciiDoc-to-DAPS)
-  - the default structure is generic ... classic book - chapter - section - sub-section
+  - the default structure is generic e.g. classic book - chapter - section - sub-section
     - other variations are also available ... [video](./media/src/mp4/variations.mp4)
       - Enterprise Architecture - [ReadMe-EA.md](./ReadMe-EA.md)
       - Reference Architecture - [ReadMe-RA.md](./ReadMe-RA.md)
-  - much of the sample text placeholder content is from the generic [Loremipsum]( https://loremipsum.io/ ) generator ... so this is where you substitute your content.
+  - much of the sample text placeholder content is from the generic [Loremipsum]( https://loremipsum.io/ ) generator, so this is where you substitute your content.
     - many templates also have built-in comments to help express what aspects to cover
     - NOTE: focus on anything that cites "FixMe"
 - To create any number of multiple output formats, install and leverage DAPS ( https://github.com/openSUSE/daps )
   - html, single-html, pdf, epub
 
-# Validation ... [video](./media/src/mp4/validation.mp4)
+# Validation
+These quickstart steps validate you have what is needed to begin your content iterations  ... [video](./media/src/mp4/validation.mp4)
 - Obtain this document's template content
   - git clone "ThisGitHubRepoURL" (to make a local copy)
   - download either master (zip) or the latest release (zip/tar.gz), then unpack it
@@ -25,6 +27,7 @@ An example template of files for variants of a solution architecture in a docume
 - Review [examples](./examples) to create and view some sample outputs
 
 # Usage / Process
+Elaborating a bit further, to highlight the modular aspects of the various template artifacts and how to use them.
 - At this point, you can now start editing the configuration/structure/content to meet your needs
   - NOTE: every portion of text that cites "FixMe" is a flag to encourage modification
   - in the top-level directory
@@ -52,11 +55,11 @@ An example template of files for variants of a solution architecture in a docume
   in the various chapter directories aka Roman numeral sequences
     - review/edit the chapter/section/sub-section content, that you wish to include
       - [adoc/i/SA.adoc](./adoc/i/SA.adoc) aka Introduction
-      - [adoc/ii/SA.adoc](./adoc/ii/SA.adoc) [video](./media/src/mp4/snippets.mp4)
+      - [adoc/ii/SA.adoc](./adoc/ii/SA.adoc) ... [video](./media/src/mp4/snippets.mp4)
       - etc
   - as you edit the modular text content snippets, create an output format
     - daps --force -d DC-SA "format" ... [video](./media/src/mp4/format.mp4)
-      - where format might be "pdf", "html", "html --single", "epub", ...
+      - where format might be "pdf", "html", "html --single", "epub"
       - then review the output and continually iterate until you have your content complete
   - miscellaneous 
     - you can also add images/media content as needed in those subdirectories
