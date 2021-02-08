@@ -31,12 +31,12 @@
       - [adoc/i/SA.adoc](./adoc/i/SA.adoc) aka Introduction
     - the corresponding layers of an enterprise architecture, which correspond to Archimate layers, are noted below
       - [adoc/i/SA.adoc](./adoc/i/SA.adoc) aka Introduction
-      - 2/ii Strategy
-      - 3/iii Business
-      - 4/iv Application
-      - 5/v Technology
-      - 6/vi Physical
-      - 7/vii Migration
+      - 2/ii [adoc/ii/SA-EA-Strategy.adoc](./adoc/ii/SA-EA-Strategy.adoc) ... Strategy
+      - 3/iii [adoc/iii/SA-EA-Business.adoc](./adoc/iii/SA-EA-Business.adoc) ... Business
+      - 4/iv [adoc/iv/SA-EA-Application.adoc](./adoc/iv/SA-EA-Application.adoc) ... Application
+      - 5/v [adoc/v/SA-EA-Technology.adoc](./adoc/v/SA-EA-Technology.adoc) ... Technology
+      - 6/vi [adoc/vi/SA-EA-Physical.adoc](./adoc/vi/SA-EA-Physical.adoc) ... Physical
+      - 7/vii [adoc/vii/SA-EA-Migration.adoc](./adoc/vii/SA-EA-Migration.adoc) ... Migration
       - in each of these chapters' directories, you will notice the main SA.doc references, via ifdef, and will utilize the alternative file content from SA-EA-layerName.adoc.
         - so you don't need to edit/touch the chapter's SA.adoc
         - if the respective ADOC_ATTRIBUTES is enabled in [DC-SA](./DC-SA) , the SA-EA-layerName.adoc is the file to edit and make changes to.

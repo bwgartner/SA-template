@@ -31,12 +31,12 @@
       - [adoc/i/SA.adoc](./adoc/i/SA.adoc) aka Introduction
     - the corresponding layers of an enterprise architecture, which correspond to the suggested chapters, as noted below
       - [adoc/i/SA.adoc](./adoc/i/SA.adoc) aka Introduction
-      - 2/ii Business problem and business value (BPBV)
-      - 3/iii Requirements 
-      - 4/iv Architectural overview (ArchOv)
-      - 5/v Component model (CompMod)
-      - 6/vi Deployment (Deployment)
-      - 7/vii Deployment considerations (DepConsiderations)
+      - 2/ii [adoc/ii/SA-RA-BPBV.adoc](./adoc/ii/SA-RA-BPBV.adoc) ... Business problem and business value (BPBV)
+      - 3/iii [adoc/iii/SA-RA-Requirements.adoc](./adoc/iii/SA-RA-Requirements.adoc)... Requirements 
+      - 4/iv [adoc/iv/SA-RA-ArchOv.adoc](./adoc/iv/SA-RA-ArchOv.adoc) ... Architectural overview (ArchOv)
+      - 5/v [adoc/v/SA-RA-CompMod.adoc](./adoc/v/SA-RA-CompMod.adoc) ... Component model (CompMod)
+      - 6/vi [adoc/vi/SA-RA-Deployment.adoc](./adoc/vi/SA-RA-Deployment.adoc) ... Deployment (Deployment)
+      - 7/vii [adoc/vii/SA-RA-DepConsiderations.adoc](./adoc/vii/SA-RA-DepConsiderations.adoc) ... Deployment considerations (DepConsiderations)
       - in each of these chapters' directories, you will notice the main SA.doc references, via ifdef, and will utilize the alternative file content from SA-RA-layerName.adoc.
         - so you don't need to edit/touch the chapter's SA.adoc
         - the relative sections/sub-sections, [DC-SA](./DC-SA) which are also based upon corresponding ADOC_ATTRIBUTES in [DC-SA](./DC-SA) will be included as well.

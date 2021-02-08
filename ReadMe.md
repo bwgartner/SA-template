@@ -5,7 +5,7 @@ An example template of files for variants of a solution architecture in a docume
 # Assumption(s) ... [video](./media/src/mp4/assumptions.mp4)
 - The text-based structure/format is in AsciiDoc ( https://github.com/asciidoc/asciidoc ) format (see/edit \*.adoc files) and can review a simple tutorial ( https://github.com/bwgartner/AsciiDoc-to-DAPS)
   - the default structure is generic ... classic book - chapter - section - sub-section
-    - other variations are also available, see
+    - other variations are also available, see [video](./media/src/mp4/variations.mp4)
       - Enterprise Architecture - [ReadMe-EA.md](./ReadMe-EA.md)
       - Reference Architecture - [ReadMe-RA.md](./ReadMe-RA.md)
   - much of the sample text placeholder content is from the generic [Loremipsum]( https://loremipsum.io/ ) generator ... so this is where you substitute your content.
